@@ -1,71 +1,87 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-html {
-  --user-photo-width: 150px;
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
-body {
-  font-family: sans-serif;
+.bgImg{
+    background: url("https://static.pexels.com/photos/248515/pexels-photo-248515.png");
+    background-size: cover;
+    width: 100%;
+    height: 500px;
 }
-a {
-  text-decoration: none;
-  color: inherit;
+h1{
+    padding-top: 150px;
 }
-.bg {
-  background-image: url("https://images.pexels.com/photos/3222255/pexels-photo-3222255.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-  height: 150px;
-  text-align: right;
-  padding: 20px;
-  color: white;
+p{
+    font-size: 20px;
+    padding: 10px 0;
+    margin: 0 auto;
+    width: 100%;
+    display: block;
+    max-width: 800px;
 }
-.contentWrapper {
-  padding: 0 1em 1em;
+.containerA{
+    color: white;
 }
-.userImg {
-  width: var(--user-photo-width);
-  height: var(--user-photo-width);
-  object-fit: cover;
-  border-radius: 50%;
-  display: inline-block;
-  margin-top: calc((-1) * var(--user-photo-width) / 2);
-  border: 4px solid white;
+.readBtn{
+    margin: 30px 0;
+    padding: 20px 30px;
+    font-size: 20px;
+    background-color: #333;
+    color: white;
+    border: 1px white solid;
 }
-.userCard {
-  width: 300px;
-  text-align: center;
-  max-width: 300px;
-  width: 100%;
-  min-width: 250px;
-  margin: 50px auto;
-  border-radius: 30px;
-  box-shadow: 0px 0px 10px gray;
-  overflow: hidden;
+.readBtn:hover{
+    color: black;
+    background-color: #ffffff;
 }
-.userName {
-  font-size: 1.5rem;
-  margin: 0.5em;
+h2{
+    color: black;
+    margin: 40px 0;
 }
-.userGeo {
-  font-size: 1rem;
-  margin: 0.5em;
+.textB{
+    display: inline-block;
+    width: 600px;
 }
-.userJob {
-  font-size: 1.2rem;
-  margin: 0.4em;
+.containerC{
+    background-color: #333;
+    margin: 20px 0;
 }
-.userExp {
-  font-size: 1rem;
-  margin: 1.2em 0;
+li{
+    display: inline-block;
+    padding: 20px 40px;
 }
-.userSocial {
-  color: white;
-  background-color: grey;
-  font-size: 1.5rem;
-  border-radius: 50%;
-  padding-top: 10px;
-  width: 45px;
-  height: 45px;
+.cardInfo{
+    width: 300px;
+    font-size: 12px;
+    background-color: #ffffff;
 }
-.userSocial + .userSocial{
-  margin-left: 40px;
+.cardInfo>p{
+    font-size: 18px;
+    padding: 20px 40px 40px 40px;
+}
+h3{
+    font-size: 22px;
+    padding: 40px 40px 20px 40px;
+}
+img{
+    width: 300px;
+}
+footer{
+    background-color: black;
+    color: white;
+    font-size: 22px;
+    margin-top: 30px;
+    width: 100%;
+}
+.twiceBlock{
+    display: inline-block;
+    padding: 15px 300px ;
+} 
+.twiceBlock>p{
+    display: inline;
 }
